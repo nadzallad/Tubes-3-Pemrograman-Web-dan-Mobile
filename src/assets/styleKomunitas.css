@@ -1,0 +1,104 @@
+.komunitas-page {
+  padding: 150px 40px 40px 40px; 
+  background-color: #edf8fe;
+  min-height: 100vh; /* biar bisa discroll ke bawah */
+}
+
+
+/* bungkus tombolnya */
+.buat-komunitas {
+  display: flex;
+  justify-content: center; 
+  margin: 15px 0 70px 0;
+}
+
+/* tombolnya */
+.buat-btn {
+  background-color: #00b9e8;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 22px; 
+  padding: 20px 50px; 
+  border: none;
+  border-radius: 30px;
+  box-shadow: 3px 4px 0px #0080a0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* efek hover */
+.buat-btn:hover {
+  transform: scale(1.05);
+  background-color: #00a1cf;
+}
+
+
+/* container grid */
+.komunitas-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+/* setiap card komunitas */
+.komunitas-card {
+  background-color: #a7e5f8;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.15);
+  width: 250px;
+  padding-bottom: 10px;
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.komunitas-card:hover {
+  transform: translateY(-5px);
+}
+
+/* gambar komunitas */
+.komunitas-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* isi info komunitas */
+.komunitas-info {
+  padding: 15px;
+}
+
+.komunitas-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.dot {
+  color: #009edb;
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.komunitas-info p {
+  margin: 3px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.detail-btn {
+  background-color: #083f7c;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  border-radius: 15px;
+  padding: 4px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.detail-btn:hover {
+  background-color: #062f60;
+}

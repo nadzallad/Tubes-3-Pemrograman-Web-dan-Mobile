@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+.font-lexend {
+  font-family: 'Lexend', sans-serif;
+}
+
+/* ======= GLOBAL ======= */
+body {
+  background-color: #e0f7ff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #006a8f;
+  margin-bottom: 25px;
+}
+
+/* ======= LABEL DAN INPUT ======= */
+.label {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #004b66;
+}
+
+.input-box {
+  width: 100%;
+  background-color: #b9efff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #a8e1f5;
+  margin-bottom: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input-box:focus {
+  border-color: #008cce;
+  background-color: #e6faff;
+}
+
+/* ======= INFO BOX ======= */
+.info-box {
+  background-color: #b9efff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #003e52;
+}
+
+/* ======= TOTAL ======= */
+.total-box {
+  background-color: #b9efff;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #003e52;
+  margin-bottom: 20px;
+}
+
+/* ======= SELECT CUSTOM ======= */
+select {
+  width: 100%;
+  background-color: #b9efff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: 1px solid #a8e1f5;
+  color: #000;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.2s;
+  font-family: 'Lexend', sans-serif;
+}
+
+select:focus {
+  border-color: #008cce;
+  background-color: #e6faff;
+}
+
+/* ======= BUTTON ======= */
+.submit-button {
+  background-color: #008cce;
+  color: #fff;
+  padding: 12px 22px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #007bb5;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}

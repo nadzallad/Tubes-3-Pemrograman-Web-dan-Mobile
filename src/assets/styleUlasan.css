@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap');
+
+@media (max-width: 768px) {
+  .places {
+    padding: 100px 20px;
+  }
+
+  .judul-section {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .place-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .place-card {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .place-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .place-info p {
+    font-size: 0.9rem;
+  }
+
+  .stars {
+    font-size: 1.2em;
+  }
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Warna utama */
+:root {
+  --primary-color: #0077b6;
+  --text-color: #fff;
+  --hover-color: #00b4d8;
+}
+
+/* Font */
+.font-lexend {
+  font-family: "Lexend", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: "Lexend", sans-serif;
+}
+
+.navbartop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px 10px;
+}
+
+.brand {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--hover-color);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.login-btn {
+  background-color: #CAF0F8;
+  border: none;
+  color: #023E8A;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #00B4D8;
+  color: #023E8A;
+}
+
+.places {
+  padding: 180px 5% 40px; 
+  background-color: #fff ;
+  min-height: 100vh;
+}
+
+
+/* Judul */
+.judul-section {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #023E8A;
+}
+
+/* Kotak sejajar ke samping */
+.place-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Kartu tempat */
+.place-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+}
+
+.place-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.place-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.place-info h3 {
+  margin-bottom: 5px;
+}
+
+.place-info p {
+  color: #444;
+  font-size: 0.95em;
+  margin-bottom: 5px;
+}
+
+.stars {
+  color: gold;
+  font-size: 1.4em;
+  margin-top: 5px;
+}
+
+
+
+
+

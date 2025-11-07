@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&display=swap');
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variabel warna */
+:root{
+    --primary-color: #0077b6;
+    --text-color: #fff;
+    --hover-color: #00b4d8;
+}
+
+/* Font */
+.font-lexend{
+    font-family: 'Lexend', sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+header{
+    background:linear-gradient(135deg, #00b4d8, #0077b6) ;
+    color: var(--text-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+h2{
+    font-family: 'Lexend', sans-serif;
+}
+
+.navbartop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    margin-bottom: 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 40px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover{
+    color: var(--hover-color);
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 11;
+}
+
+/* Icon profil dan tombol login  */
+.profile-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.login-btn{
+    background-color: #CAF0F8;
+    border: none;
+    color: #023E8A;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover{
+    background-color: #00B4D8;
+    color: #023E8A;
+}
+
+
+/* Bagian Informasi Umum */
+.informasi-umum {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .informasi-umum {
+    margin-top: 80px; /* sesuaikan dengan tinggi navbar di layar besar */
+  }
+}
+
+/* Jarak dari navbar (mobile/tablet) */
+@media (max-width: 768px) {
+  .informasi-umum {
+    margin-top: 110px; /* navbar lebih tinggi di HP, jadi kasih jarak lebih */
+  }
+}
+
+/* Container slider */
+.slider-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gambar utama */
+.informasi-umum-img {
+  width: 100%;          /* mengikuti lebar layar */
+  height: auto;         /* proporsional, tidak gepeng */
+  object-fit: contain;  /* tidak terpotong */
+  display: block;
+  max-height: 90vh;     /* batasi tinggi maksimal biar gak kepanjangan */
+}
+
+/* Tombol navigasi kiri-kanan */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 5;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Responsif di layar kecil */
+@media (max-width: 768px) {
+  .informasi-umum-img {
+    max-height: 70vh;  /* biar gak terlalu tinggi di HP */
+  }
+}
+
+
+/* Pilihan sewa alat dan reservasi tempat */
+.fitur-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px 5%;
+    background-color: #CAF0F8;
+    flex-wrap: wrap; 
+}
+
+.fitur-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 45%;
+    min-width: 400px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px; 
+    gap: 20px; 
+}
+
+
+.fitur-box:hover{
+    transform: translateY(-5px);
+}
+
+.fitur-img {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0; /* hapus margin biar pas */
+    flex-shrink: 0; /* biar gak mengecil */
+}
+
+.fitur-text{
+    padding: 20px;
+    width: 60%;
+}
+
+/* Tombol pesan */
+.pesan-btn {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 35px;        /* lebih lega */
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 119, 182, 0.3);
+  margin-top: 20px;           /* jarak dari tulisan di atas */      /* jarak dari kiri */
+}
+
+.pesan-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0, 119, 182, 0.4);
+  background: linear-gradient(135deg, #0096c7, #005f99);
+}
+
+/* Responsif */
+@media (max-width: 428px) {
+    .fitur-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fitur-box {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fitur-img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .fitur-text {
+        width: 100%;
+    }
+}
+
+/* ====== Cuaca Section ====== */
+.weather-section {
+ 
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.judul-cuaca {
+  font-size: 1.8rem;
+  color: #004d73;
+  margin-bottom: 20px;
+}
+
+.cuaca-sekarang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cuaca-icon {
+  width: 100px;
+}
+
+.cuaca-detail {
+  text-align: left;
+}
+
+.tanggal {
+  color: #444;
+}
+
+.suhu {
+  font-size: 3rem;
+  margin: 10px 0;
+  color: #0077b6;
+}
+
+.deskripsi {
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+}
+
+.judul-forecast {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  color: #00567a;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.forecast-item {
+  background: #f8fdff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsif */
+@media (max-width: 428px) {
+  .weather-box {
+    flex-direction: column;
+  }
+
+  .weather-box img {
+    width: 100%;
+    height: 220px;
+  }
+}
+
+/* Bagian tentang kami */
+.tentang-kami {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #CAF0F8;
+}
+
+.judul-tentang {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+.tentang-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tentang-box {
+    background-color: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.tentang-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.tentang-icon{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* ======= Bagian Daftar & Masuk ======= */
+
+/* Overlay abu-abu transparan */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+
+/* Popup Container */
+.login-container {
+  background-color: #ade8fa;
+  position: fixed; 
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  z-index: 9999;
+  position: fixed;
+
+}    
+
+/* Kotak Login/Daftar */
+.login-box {
+  justify-content: center;
+  margin: 10px 10px;
+  padding: 20px 20px;
+  border-radius: 10px;
+  width: 300px;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.login-box h2 {
+
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.login-box input {
+  background-color: #ffffff;
+  color: #333;
+  border: 1.5px solid #0077b6;
+  border-radius: 6px;
+  padding: 10px 12px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+
+.login-box button {
+  width: 95%;
+  padding: 10px;
+  border: none;
+  background-color: #48caE4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #00b4d8;
+  box-shadow: 0 0 5px rgba(0,180,216,0.4);
+}
+
+
+.login-box button:hover {
+  transform: translateY(-2px);
+  background-color: #00c4cc;
+}
+
+/* Tombol X Tutup */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent; 
+  border: none;
+  color: red;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+/* Teks bawah popup */
+.daftar-text, .bottom-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.daftar-text a, .bottom-text a {
+  color: blue;
+  text-decoration: none;
+}
+
+.daftar-text a:hover, .bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* TAMBAHAN STYLE NAVBAR & TOGGLE */
+/* ============================= */
+
+/* Tombol toggle (☰ Menu) */
+.menu-toggle {
+  display: none; /* sembunyikan di desktop */
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+/* Responsif: tampilan HP/tablet */
+@media (max-width: 428px) {
+  /* Navbar container di HP */
+  .navbar {
+    flex-direction: column;
+    align-items: center;        /* semula flex-start, ubah ke center */
+    justify-content: center;    /* agar semua di tengah */
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  /* Tombol toggle muncul */
+  .menu-toggle {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Sembunyikan link menu secara default */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;        /* biar tiap link center */
+    justify-content: center;
+    background-color: #0096c7;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  /* Saat toggle aktif */
+  .nav-links.aktif {
+    display: flex;
+  }
+
+  /* Style link di mobile */
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    color: white;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Bagian kanan (login + profil) juga center */
+  .nav-right {
+    position: static;           /* jangan absolute, biar bisa ikut layout */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Brand agar tetap di tengah */
+  .brand {
+    text-align: center;
+    width: 100%;
+  }
+}

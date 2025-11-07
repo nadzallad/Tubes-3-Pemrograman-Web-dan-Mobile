@@ -1,0 +1,186 @@
+@media (max-width: 768px) {
+  .ulasan-page {
+    margin-top: 60px;
+    padding: 10px;
+  }
+
+  .review-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .username {
+    font-size: 1em;
+  }
+
+  .stars {
+    font-size: 1em;
+    margin-top: 4px;
+  }
+
+  .comment {
+    font-size: 0.9em;
+  }
+
+  .add-review-container {
+    padding: 15px;
+  }
+
+  .add-review-container h3 {
+    text-align: center;
+  }
+
+  .add-review-container button {
+    align-self: center;
+  }
+}
+
+
+/* Halaman Utama Ulasan */
+.ulasan-page {
+  padding: 10px;
+  max-width: 2100px;
+  margin: auto;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  margin-top: 100px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Judul */
+.judul-review {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Kartu Ulasan */
+.review-card {
+  display: flex;
+  align-items: flex-start;
+  background:linear-gradient(135deg, #00b4d8, #a0bece);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 16px;
+  object-fit: cover;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #023e8a;
+}
+
+.stars {
+  color: gold;
+  margin-top:auto;
+  font-size: 1.2em;
+}
+
+.comment {
+  margin-top: 8px;
+  font-style: italic;
+  line-height: 1.4;
+  color: #023e8a;
+}
+
+/* Tombol Kembali */
+.back-btn {
+  align-self: flex-start;
+  margin-top: auto;
+  margin-bottom: 2px;
+  padding: 10px 20px;
+  background:linear-gradient(135deg, #00b4d8, #a0bece);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #2563eb;
+}
+
+.add-review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background:linear-gradient(135deg, #00b4d8, #a0bece); 
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/*Judul Form*/
+.add-review-container h3 {
+  margin-bottom: 15px;
+  color: #023e8a;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Form Ulasan */
+.add-review-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.add-review-container input,
+.add-review-container select,
+.add-review-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background:#fff;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* Tombol Kirim */
+.add-review-container button {
+  align-self: flex-end;
+  background-color:#fff;
+  color: #023e8a;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-review-container button:hover {
+  background-color: #023e8a;
+}

@@ -1,0 +1,74 @@
+.form-komunitas {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5fcff;
+  min-height: 100vh;
+}
+
+.judul-form {
+  color: #007ea7;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-card label {
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+}
+
+.form-card input,
+.form-card textarea {
+  border: 2px solid #cceeff;
+  border-radius: 12px;
+  padding: 12px 15px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+  border-color: #00b9e8;
+  box-shadow: 0px 0px 5px rgba(0, 185, 232, 0.5);
+}
+
+.submit-btn {
+  background-color: #0f98ba;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  cursor: pointer;
+  align-self: center;
+  box-shadow: 2px 3px 0px #0080a0;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  transform: scale(1.05);
+  background-color: #00a1cf;
+}

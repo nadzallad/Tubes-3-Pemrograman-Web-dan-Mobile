@@ -1,0 +1,58 @@
+.detail-komunitas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px;
+}
+
+.detail-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  padding: 30px;
+  width: 700px;
+  text-align: center;
+}
+
+.detail-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 10px 0;
+  color: #007da5;
+}
+
+.lokasi, .anggota {
+  color: #555;
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+.deskripsi {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.join-btn {
+  background-color: #00b9e8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background-color: #009dcc;
+  transform: scale(1.05);
+}
+
